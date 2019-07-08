@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利牛投资</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./coment.css">
+    <style>
+        .head{
+            height: 108px;
+            background-color: #e65224;
+        }
+        .head .logo{
+            height: 108px;
+            background-color: #e65224;   
+        }
+        .head .logo .a{
+            float: left;
+            margin-left: 2px;
+        }
+        .head .logo .logoname{
+            text-indent: -99em;
+            width: 2px;
+        }
+        .nav{
+            height: 80px;
+            line-height: 80px;
+            background-color: white;
+        }
+        .nav ul{
+            margin-left: 2px;
+        }
+        .nav ul li{
+            float: left;
+            margin-right: 65px;
+            font-size: 16px;
+        }
+        .nav ul li a:hover{
+            color: #e65224;
+        }
+        .advantage{
+            background-color:white;
+            height: 138px; 
+        }
+        .advantage .advantage1{
+            float:left;
+            margin-top: 46px;
+            width: 233px;
+            height: 81px;
+        } 
+        .advantage .advantage1 img{
+            float: left;
+        }
+        .advantage .advantage1 p{
+            float: left;
+            margin-top:5px;
+            margin-left: 11px;
+            width: 140px;
+            color: #696969;
+        }
+        .advantage .advantagetext{
+            font-size: 20px;
+            margin-left: 11px;
+        } 
+        .products{
+                height: 141px;
+                line-height: 141px;
+                background-color: white;
+        }
+        .products .main{
+                width: 290px;
+                margin: 0 auto;
+                height: 141px;
+                
+        }
+        .products h1{
+            float: left;
+            color: black;
+            font-family: 黑体;
+        }
+        .products h2{
+           float: left;
+           color: #a7a7a7;
+        }
+        .services{
+            height: 258px;
+            background-color: white;
+        }
+        .services div{
+            float: left;
+            margin-right: 20px;
+        }
+        .services div img{
+            margin-bottom: 24px;
+        }
+        .services div p{
+            font-size: 12px;
+            width: 225px;
+            color: #9f9f9f;
+            line-height: 2;
+        }
+        .services .services1 .services11{
+            font-size: 16px;
+            color: #ff6537;
+        } 
+        .about{
+            height: 193px;            
+            text-align: center;
+            background-image: url("./aboutour.png");
+            color: #ffffff;
+        }
+        .about h2{  
+            font-size: 18px;          
+            height:92px;
+            line-height: 92px; 
+        }
+        .about p{
+            margin: auto;
+            width: 560px;
+            font-size: 14px;
+            line-height: 2;
+        }
+        .ending{
+            height: 465px;
+            margin-top: 60px;
+            background-color: white;
+        }
+        .ending .news{
+            float: left;
+            width: 641px;
+        }
+        .ending .news .headline{
+            height:48px;
+        }
+        .ending .news h1{
+            float: left;
+            color: #272727;
+            font-family: 黑体;
+        }
+        .ending .news .headline h2{
+            float: left;
+            margin:4px 8px;
+            color: #a7a7a7;
+        }
+        .ending .news .news1 .newsp{
+            position: relative;
+        }
+        .ending .news .news1 .newsp p{
+            font-size: 14px;
+            color: white;
+            position: absolute;
+            width: 300px;
+            margin-top:142px;
+            height:29px;
+            line-height:29px;
+            text-align:center;
+            background-color:rgba(0, 0,0,0.7)
+        }
+        .ending .news .news11{
+            float: left;
+            margin-left: 9px;
+        }
+        .ending .news .news12{
+            float: right;
+            margin-right: 9px;
+        }
+        .ending .news .news1 ul{
+            margin-top: 24px;
+        }
+        .ending .news .news1 ul li{
+            margin-left: 20px;
+            margin-bottom: 14px;
+            list-style-type:disc;
+            color:#ff6537;
+            font-size: 12px;
+            line-height: 3;
+        }
+        .ending .news .news1 ul li a{
+            color: #666666;
+        }
+        .ending .news .news1 ul li a:hover{
+            color: #ff6537;
+        }
+        .ending .news .news1 ul li a p{
+            float: right;
+            font-size: 14px;
+        }
+        .ending .news .news1 ul li a .p1{
+            float:left;
+            width: 178px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .ending .question{
+            float: left;
+            width: 319px;
+        }
+        .ending .question .headline{
+            height: 24px;
+        }
+        .ending .question .headline h1{
+            float: left;
+            color: #272727;
+            font-family: 黑体;
+        }
+        .ending .question .headline h2{
+            float: left;
+            margin:3px 8px;
+            color: #a7a7a7;
+        }
+        .ending .question .answer{
+            margin-left: 8px;
+            padding: 12px 0;
+        }
+        .ending .question .answer .ask{
+            margin: 10px 0;
+            height: 28px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+        .ending .question .answer .ask img{
+            float: left;
+        }
+        .ending .question .answer .ask a{
+            padding-left: 20px;
+            color: #1a1a1a;
+        }
+        .ending .question .answer .tell{
+            margin: 20px 0;
+            height: 40px;;
+        }
+        .ending .question .answer .tell img{
+            float: left;
+            margin-top: 12px;
+        }
+        .ending .question .answer .tell p{
+            color: #646464;
+            float: left;
+            width: 240px;
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 2;
+            
+        }
+        .cooperative{
+            height: 328px;
+            background-color: #f6f6f6;
+        }
+        .cooperative .cooperative1{
+            background-color: #f6f6f6;
+        }
+        .cooperative .cooperative1 h2{
+            padding: 50px 0;
+        }
+        .bottom{
+            height: 74px;
+            background-color: #353535;
+        }
+        .bottom .bottom1{
+            font-size: 14px;
+            text-align: center;
+            padding-top: 24px;
+            background-color: #353535;
+            color: #666666;
+        }
+        .bottom .bottom1 .bottom11{
+            margin: 0 397px;
+            color: #666666;
+        }
+        .bottom .bottom1 .bottom11 .f{
+            float: left;
+            color: #666666;
+        }
+        .bottom .bottom1 .bottom11 a:hover{
+            color: #ff6537;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部 start -->
+    <div class="head">
+        <div class="logo w960">
+            <h1 class="logoname">利牛网</h1>
+            <a href="./利牛网.html" title="利牛金融"><img src="./liniu.png" alt=""></a>
+        </div>
+    </div>
+    </div>
+    <!-- 顶部 end -->
+    <!-- 导航 start -->
+    <div class="nav w960">
+        <ul>
+            <li><a href="" style="color: #e65224">首页</a></li>
+            <li><a href="">关于利牛</a></li>
+            <li><a href="">行业资讯</a></li>
+            <li><a href="">主要业务</a></li>
+            <li><a href="">安全保障</a></li>
+        </ul>
+    </div>
+    <!-- 导航 end -->
+    <!-- 利牛金融图 start -->
+    <div class="figure1 w960">
+        <img src="./liniujinrong.png" alt="">
+    </div>
+    <!-- 利牛金融图 end -->
+    <!-- 三大优点 start -->
+    <div class="advantage w960">
+        <div class="advantage1">
+            <img src="./wendinggaoshouyi.png" alt="">
+            <p class="advantagetext" style="color: black;">稳定高收益</p>
+            <p>40倍银行活期存款利息100元起投，交易0手续费</p>
+        </div>
+        <div class="advantage1" style="margin-left:130.5px;margin-right:130.5px;">
+            <img src="./anquanyanbaozhang.png" alt="">
+            <p class="advantagetext" style="color: black;">安全严保障</p>
+            <p>本息保障、风控审核贷后管理</p>
+        </div>
+        <div class="advantage1">
+            <img src="./bianjieyoufuwu.png" alt="">
+            <p class="advantagetext" style="color: black;">便捷优服务</p>
+            <p>24小时放贷，提前还款减免费用</p>
+        </div>
+    </div>
+    <!-- 三大优点 end -->
+    <!-- 主要业务 start -->
+    <div class="products w960">
+        <div class="main">
+            <h1>主要业务</h1>
+            <h2>/ PRODUCTS SERVICES</h2>   
+        </div>
+    </div>
+    <div class="services w960">
+        <div class="services1">
+            <img src="./touziyewu.png" alt="">
+            <p class="services11">投资业务</p>
+            <p>证券投资业务，指银行购买有价证券的活动。</p>
+        </div>
+        <div class="services1">
+            <img src="./licaizengzhi.png" alt="">
+            <p class="services11">理财增值</p>
+            <p>通过发行基金单位，集中投资者的资金，由基金管理人管理和运用资金。</p>
+        </div>
+        <div class="services1">
+            <img src="./xintuofuwu.png" alt="">
+            <p class="services11">信托服务</p>
+            <p>信托业务建立了以项目为中心，以风险贯穿其间的业务运作平台。</p>
+        </div>
+        <div class="services1" style="margin-right:0;">
+            <img src="./chanpindaili.png" alt="">
+            <p class="services11">产品代理</p>
+            <p>通过代理的形式，推广和买卖产品，是产品的一种交易和流通方式。</p>
+        </div>
+    </div>
+    <!-- 主要业务 end -->
+    <!-- 关于我们 start -->
+    <div class="about w960">
+        <h2>关于我们</h2>
+        <p>利牛金融有限公司是在1991年5月13日成立的艾宏保险公司的基础上组建而成的金融集团公司，总部设在上海，以“推动和实现可持续的价值增长”为经营理念。</p>
+    </div>
+    <!-- 关于我们 end -->
+    <!-- 结尾 start -->
+    <div class="ending w960">
+        <div class="news">
+            <div class="headline">
+                <h1>新闻资讯</h1>
+                <h2>/ NEWS</h2>   
+            </div>
+            <div class="news1 news11">
+                <div class="newsp">
+                    <p >活用理财小公式 让财富轻松翻倍！</p>
+                    <a href=""><img src="./news1.png" alt=""></a>
+                   
+                </div>
+                <ul >
+                    <li>
+                        <a href="">
+                            <p class="p1">证监会：分级基金投资者门槛定位30万元证券资产</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1">两市震荡下行 次新股板块走势较分化</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1">机场民航板块起飞 上海机场张3.31%</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1">人民币汇率有条件保持基本稳定</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news1 news12">
+                <div class="newsp">
+                    <a href="">
+                        <p>杜绝5种理财陋习 让你理财不伤心！</p>
+                        <img src="./news2.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p class="p1">年关将至，4件大事发生将影响你我的生活！</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1">投资理财5个地方该花的钱，你花了吗？</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1"> 关于年终奖的这些秘密你都知道吗？</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="p1">活用理财小公式 让财富轻松翻倍！</p>
+                            <p>2016-11-29</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="question">
+            <div class="headline">
+                <h1>常见问题</h1>
+                <h2>/ Q&A</h2>
+            </div>
+            <div class="answer">
+                <div class="ask">                
+                    <img src="./ask.png" alt="">
+                    <a href="">个人征信记录要注重哪些？</a>
+                </div>
+                <div class="tell">                
+                    <img src="./tell.png" alt="">
+                    <p style="padding-top: 12px;">个人信息：姓名、证件类型证件号码。</p>
+                </div>
+            </div>
+            <div class="answer" style="border-top: 1px dashed #cfcfcf; border-bottom: 1px dashed #cfcfcf;">
+                <div class="ask">
+                    <img src="./ask.png" alt="">
+                    <a href="">银行理财产品该怎么选？</a>  
+                </div>
+                <div class="tell">
+                    <img src="./tell.png" alt="">
+                    <p>现在各大银行都推出琳琅满目的理财产品，我们该如何做选择呢。</p>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="ask">
+                    <img src="./ask.png" alt="">
+                    <a href="">个人消费贷款如何办理？</a> 
+                </div>
+                <div class="tell">
+                    <img src="./tell.png" alt="">
+                    <p>个人消费贷款也叫做消费者贷款，是银行以消费者信用为基础。</p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 结尾 end -->
+    <!-- 合作机构 start -->
+    <div class="cooperative">
+        <div class="cooperative1 w960">
+            <h2>合作机构</h2>
+            <img src="./hezuojigou.png" alt="">   
+        </div>
+    </div>
+    <!-- 合作机构 end -->
+    <!-- 底部 start -->
+    <div class="bottom">
+        <div class="bottom1 w960">
+            <p>&copy2019 金融保险版权所有</p>
+            <div class="bottom11">
+                <p class="p2 f" style="width: 56px;">本站使用</p>
+                <a class="f" href="" style="width: 74px;"><img src="./fanke.png" style="float: left;" alt=""> 凡科商城</a>
+                <p class="p3 f" style="width: 28px;margin-left: 8px;">搭建</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 end -->
+</body>
+</html>
